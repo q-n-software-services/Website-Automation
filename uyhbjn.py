@@ -38,9 +38,9 @@ while True:
             driver[i].get("https://ais.usvisa-info.com/en-tr/iv/users/sign_in")
 
             email_input = driver[i].find_element_by_id('user_email')
-            email_input.send_keys('abdirahmaaan025@gmail.com')
+            email_input.send_keys('user-id')
             password_input = driver[i].find_element_by_id('user_password')
-            password_input.send_keys('Mahad-025')
+            password_input.send_keys('password')
             check_box = driver[i].find_element_by_css_selector('label[for="policy_confirmed"]')
             check_box.click()
             sign_in_button = driver[i].find_element_by_name('commit')
@@ -91,7 +91,7 @@ while True:
             name, data1)
 
         try:
-            pywhatkit.sendwhatmsg_instantly('+905523267748', message)
+            pywhatkit.sendwhatmsg_instantly('user whatsapp number', message)
             position = pt.locateOnScreen('send_button12.png', confidence=0.9)
             pt.moveTo(position)
             pt.click()
@@ -113,11 +113,11 @@ while True:
 
             # Update your Email Details
 
-            SERVER = 'smtp-relay.sendinblue.com'  # your smtp server
+            SERVER = 'smtp domain'  # your smtp server
             PORT = 587  # your Port Number
             FROM = 'qnsoftwareservices12272@gmail.com'  # "Your From Email ID"
-            TO = 'salmanmahad34@gmail.com'  # "Your To Email Ids " Can be a list
-            PASS = '5Yq9UA7dWMCGLx3v'  # "Your Email Id's Password
+            TO = 'user email'  # "Your To Email Ids " Can be a list
+            PASS = 'password'  # "Your Email Id's Password
 
             # Create a text/plain message
             msg = MIMEMultipart()
